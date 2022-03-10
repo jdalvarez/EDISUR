@@ -1,24 +1,24 @@
-package com.jdalvarez.encuesta
+package com.jdalvarez.encuesta.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.jdalvarez.encuesta.databinding.FragmentHelloScreenBinding
-import java.util.zip.Inflater
+import com.jdalvarez.encuesta.databinding.FragmentSplashBinding
 
-class HelloScreen : Fragment() {
+class SplashFragment : Fragment() {
 
-    private lateinit var binding: FragmentHelloScreenBinding
+    private lateinit var binding: FragmentSplashBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding= FragmentHelloScreenBinding.inflate(inflater,container,false)
+        binding= FragmentSplashBinding.inflate(inflater,container,false)
         return binding.root
     }
+
 
 
 }

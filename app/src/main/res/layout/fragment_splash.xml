@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HelloScreen"
+    tools:context=".ui.SplashFragment"
     android:background="#0c1f42">
 
     <ImageView
