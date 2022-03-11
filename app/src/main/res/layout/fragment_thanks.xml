@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.SplashFragment"
-    android:background="#0c1f42">
+    tools:context=".Thanks"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/green2"
@@ -49,17 +49,17 @@
         app:layout_constraintBottom_toTopOf="@id/blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/iniciar_encuesta"
+        android:text="¡MUCHAS GRACIAS!"
         android:textSize="50sp"
-        android:textColor="@color/white"/>
+        android:textColor="@drawable/rectangle_white"/>
     <ImageView
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iniciar"
         app:layout_constraintBottom_toTopOf="@id/blue"
         android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edisur_png"/>
+        android:layout_height="35dp"
+        android:background="@drawable/edisur_logo_color"/>
 
 
     <ImageView
@@ -94,7 +94,6 @@
         android:layout_width="190dp"
         android:layout_height="10dp"
         android:background="@drawable/rectangle_blue"/>
-
 
 
 

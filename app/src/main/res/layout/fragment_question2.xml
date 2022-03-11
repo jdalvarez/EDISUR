@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.SplashFragment"
-    android:background="#0c1f42">
-
+    tools:context=".ui.Question2Fragment"
+    android:background="#3b7655">
     <ImageView
         android:id="@+id/green2"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,26 +39,75 @@
         android:layout_height="10dp"
         android:background="@drawable/rectangle_green"/>
 
-
     <TextView
-        android:id="@+id/iniciar"
+        android:id="@+id/pregunta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/blue"
+        android:layout_marginTop="80dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/iniciar_encuesta"
-        android:textSize="50sp"
+        android:text="@string/pregunta2"
+        android:textSize="20sp"
+        android:textAlignment="center"
         android:textColor="@color/white"/>
-    <ImageView
+    <RadioGroup
+        android:id="@+id/Qgroup"
+        app:layout_constraintTop_toBottomOf="@id/pregunta"
+        app:layout_constraintStart_toStartOf="@id/pregunta"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/no_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/why"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/por_qu"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+            <EditText
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:backgroundTint="#8893a3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iniciar"
+        app:layout_constraintTop_toBottomOf="@id/Qgroup"
+        app:layout_constraintBottom_toTopOf="@id/logo"/>
+    <ImageView
+        android:id="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/blue"
+        android:layout_marginBottom="20dp"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:background="@drawable/edisur_png"/>
+        android:background="@drawable/edisur_png" />
 
 
     <ImageView
@@ -94,8 +142,6 @@
         android:layout_width="190dp"
         android:layout_height="10dp"
         android:background="@drawable/rectangle_blue"/>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

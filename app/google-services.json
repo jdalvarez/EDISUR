@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "319372480578",
+    "project_id": "encuesta-edisur",
+    "storage_bucket": "encuesta-edisur.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319372480578:android:911c45801d92ecd1f5dddb",
+        "android_client_info": {
+          "package_name": "com.jdalvarez.encuesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319372480578-u5bkagv51bmp6nbs4f0ki00gba3mk0s2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw7pnPA2VBMOEaQmvnYKCDujOImx9B5zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319372480578-u5bkagv51bmp6nbs4f0ki00gba3mk0s2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

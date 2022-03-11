@@ -3,4 +3,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="iniciar_encuesta">INICIAR ENCUESTA</string>
+    <string name="pregunta1">¿HABÍAS ASISTIDO A OTRAS FERIAS AJÍ?</string>
+    <string name="pregunta2">¿TE GUSTÓ QUE ESTA EDICIÓN SE REALICE \nNUEVAMENTE EN MANANTIALES?</string>
+    <string name="por_qu">¿POR QUÉ?</string>
+    <string name="vivo_ac">Vivo aca</string>
+    <string name="un_amigo_o_familiar_vive_ac">Un amigo o familiar vive aca</string>
+    <string name="he_pasado_alguna_vez">He pasado alguna vez</string>
+    <string name="vengo_a_hacer_deportes_recreaci_n">Vengo a hacer deportes/Recreacion</string>
+    <string name="por_publicidades">Por publicidades</string>
+    <string name="te_parece_un_lindo_lugar_para_vivir">¿TE PARECE UN LINDO LUGAR PARA VIVIR?</string>
 </resources>
