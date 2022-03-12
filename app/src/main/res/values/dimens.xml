@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="checkbox_text_size_huge">40sp</dimen>
+    <dimen name="checkbox_text_size">25sp</dimen>
+    <dimen name="checkbox_text_size_small">19sp</dimen>
+    <dimen name="button_text_size">28sp</dimen>
+    <dimen name="form_text_size">25sp</dimen>
+    <dimen name="question_title_size">30sp</dimen>
+    <dimen name="question_title_size_huge">40sp</dimen>
+    <dimen name="question_title_size_small">26sp</dimen>
+    <dimen name="button_next_width">450dp</dimen>
+    <dimen name="checkbox_margin_top">8dp</dimen>
+    <dimen name="answers_margin_top">25dp</dimen>
+    <dimen name="answers_margin_top_huge">50dp</dimen>
+</resources>

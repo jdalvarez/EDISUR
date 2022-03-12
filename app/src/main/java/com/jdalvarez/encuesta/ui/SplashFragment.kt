@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.jdalvarez.encuesta.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {
@@ -17,6 +18,17 @@ class SplashFragment : Fragment() {
     ): View {
         binding= FragmentSplashBinding.inflate(inflater,container,false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setListener()
+    }
+
+    private fun setListener(){
+        binding.iniciar.setOnClickListener {
+            findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToFormFragment())
+        }
     }
 
 

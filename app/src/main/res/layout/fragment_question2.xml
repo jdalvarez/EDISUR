@@ -48,23 +48,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pregunta2"
-        android:textSize="20sp"
+        android:textSize="@dimen/question_title_size"
         android:textAlignment="center"
         android:textColor="@color/white"/>
     <RadioGroup
         android:id="@+id/Qgroup"
+        android:layout_marginTop="@dimen/answers_margin_top_huge"
         app:layout_constraintTop_toBottomOf="@id/pregunta"
         app:layout_constraintStart_toStartOf="@id/pregunta"
         android:layout_marginLeft="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <RadioButton
+            android:id="@+id/si_answer"
+            android:textSize="@dimen/checkbox_text_size_huge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Si"
             android:textColor="@color/white"
             android:textStyle="bold"/>
         <RadioButton
+            android:textSize="@dimen/checkbox_text_size_huge"
             android:id="@+id/no_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,17 +77,23 @@
             android:textStyle="bold"/>
         <LinearLayout
             android:id="@+id/why"
-            android:visibility="gone"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="40dp">
             <TextView
+                android:textSize="@dimen/checkbox_text_size"
+                android:id="@+id/why_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/por_qu"
                 android:textColor="@color/white"
-                android:textStyle="bold"
+                android:textStyle="bold"/>
             <EditText
-                android:layout_width="400dp"
+                android:textSize="@dimen/checkbox_text_size_huge"
+                android:id="@+id/why_answer"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
@@ -91,9 +101,11 @@
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/nextQuestion"
+        android:layout_width="@dimen/button_next_width"
         android:layout_height="wrap_content"
         android:text="Siguiente"
+        android:textSize="@dimen/button_text_size"
         android:backgroundTint="#8893a3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

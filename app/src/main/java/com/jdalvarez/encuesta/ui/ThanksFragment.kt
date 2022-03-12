@@ -1,13 +1,14 @@
-package com.jdalvarez.encuesta
+package com.jdalvarez.encuesta.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.jdalvarez.encuesta.databinding.FragmentThanksBinding
 
-class Thanks : Fragment() {
+class ThanksFragment : Fragment() {
     private lateinit var binding: FragmentThanksBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -15,6 +16,17 @@ class Thanks : Fragment() {
     ): View {
         binding= FragmentThanksBinding.inflate(inflater,container,false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setUpUi()
+    }
+
+    private fun setUpUi() {
+        binding.finalizar.setOnClickListener {
+            findNavController().navigate(ThanksFragmentDirections.actionThanksFragmentToSplashFragment())
+        }
     }
 
 }

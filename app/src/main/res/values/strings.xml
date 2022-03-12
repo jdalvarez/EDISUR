@@ -12,4 +12,17 @@
     <string name="vengo_a_hacer_deportes_recreaci_n">Vengo a hacer deportes/Recreacion</string>
     <string name="por_publicidades">Por publicidades</string>
     <string name="te_parece_un_lindo_lugar_para_vivir">¿TE PARECE UN LINDO LUGAR PARA VIVIR?</string>
+    <string name="ten_s_conocimiento_sobre_los_emprendimientos_que_estamos_promocionando_en_manantiales">¿TENÉS CONOCIMIENTO SOBRE LOS EMPRENDIMIENTOS QUE ESTAMOS PROMOCIONANDO EN MANANTIALES?</string>
+    <string name="pilares_venta_de_departamentos_edificios_torres_etc">PILARES (VENTA DE DEPARTAMENTOS, EDIFICIOS, TORRES, ETC)</string>
+    <string name="flats_del_parque_venta_de_departamentos_edificios_torres_etc">FLATS DEL PARQUE (VENTA DE DEPARTAMENTOS, EDIFICIOS, TORRES, ETC)</string>
+    <string name="abras_venta_de_lotes">ABRAS (VENTA DE LOTES)</string>
+    <string name="casas_mirador_venta_de_casas_venta_de_housing_etc">CASAS MIRADOR (VENTA DE CASAS, VENTA DE HOUSING, ETC.)</string>
+    <string name="housing_de_miradores_venta_de_casas_venta_de_housing_etc">HOUSING DE MIRADORES (VENTA DE CASAS, VENTA DE HOUSING, ETC.)</string>
+    <string name="manantiales_10_a_os_parque_la_ca_ada_etc">MANANTIALES (10 AÑOS, PARQUE LA CAÑADA, ETC.)</string>
+    <string name="alquileres_casas_departamentos_casonas_etc">ALQUILERES (CASAS, DEPARTAMENTOS, CASONAS, ETC).</string>
+    <string name="te_interesar_a_recibir_novedades_comerciales_sobre_grupo_edisur">¿TE INTERESARÍA RECIBIR NOVEDADES COMERCIALES SOBRE GRUPO EDISUR?</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="e_mail">E-mail</string>
+    <string name="telefono">Telefono</string>
 </resources>

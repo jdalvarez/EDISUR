@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.Question4Fragment"
-    android:background="#3b7655">
+    tools:context=".ui.Question5Fragment"
+    android:background="#005cb9">
+
     <ImageView
         android:id="@+id/green2"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,74 +45,95 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/te_parece_un_lindo_lugar_para_vivir"
-        android:textSize="@dimen/question_title_size"
+        android:text="@string/ten_s_conocimiento_sobre_los_emprendimientos_que_estamos_promocionando_en_manantiales"
+        android:textSize="@dimen/question_title_size_small"
         android:textAlignment="center"
         android:textColor="@color/white"/>
-    <RadioGroup
-        android:layout_marginTop="@dimen/answers_margin_top"
+    <LinearLayout
         android:id="@+id/Qgroup"
+        android:layout_marginTop="@dimen/answers_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pregunta"
-        app:layout_constraintStart_toStartOf="@id/pregunta"
-        android:layout_marginLeft="50dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:id="@+id/si_answer"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <CheckBox
+            android:layout_marginTop="@dimen/checkbox_margin_top"
+            android:id="@+id/chk1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Si"
-            android:textSize="@dimen/checkbox_text_size"
+            android:text="@string/pilares_venta_de_departamentos_edificios_torres_etc"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
-        <RadioButton
-            android:textSize="@dimen/checkbox_text_size"
-            android:id="@+id/no_answer"
+            android:textStyle="bold"
+            android:textSize="@dimen/checkbox_text_size_small"/>
+        <CheckBox
+            android:layout_marginTop="@dimen/checkbox_margin_top"
+            android:id="@+id/chk2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
+            android:text="@string/flats_del_parque_venta_de_departamentos_edificios_torres_etc"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
-        <LinearLayout
-            android:visibility="gone"
-            android:id="@+id/why"
+            android:textStyle="bold"
+            android:textSize="@dimen/checkbox_text_size_small"/>
+        <CheckBox
+            android:layout_marginTop="@dimen/checkbox_margin_top"
+            android:id="@+id/chk3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="40dp">
-            <TextView
-                android:textSize="@dimen/checkbox_text_size"
-                android:id="@+id/why_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/por_qu"
-                android:textColor="@color/white"
-                android:textStyle="bold"/>
-            <EditText
-                android:textSize="@dimen/checkbox_text_size"
-                android:id="@+id/why_answer"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <RadioButton
-            android:textSize="@dimen/checkbox_text_size"
-            android:id="@+id/no_sabe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No sabe / No Contesta"
+            android:text="@string/abras_venta_de_lotes"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="@dimen/checkbox_text_size_small"/>
+        <CheckBox
+            android:layout_marginTop="@dimen/checkbox_margin_top"
+            android:id="@+id/chk4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casas_mirador_venta_de_casas_venta_de_housing_etc"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/checkbox_text_size_small"/>
+        <CheckBox
+            android:layout_marginTop="@dimen/checkbox_margin_top"
+            android:id="@+id/chk5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/housing_de_miradores_venta_de_casas_venta_de_housing_etc"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/checkbox_text_size_small"/>
+        <CheckBox
+            android:layout_marginTop="@dimen/checkbox_margin_top"
+            android:id="@+id/chk6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manantiales_10_a_os_parque_la_ca_ada_etc"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/checkbox_text_size_small"/>
+        <CheckBox
+            android:layout_marginTop="@dimen/checkbox_margin_top"
+            android:id="@+id/chk7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alquileres_casas_departamentos_casonas_etc"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/checkbox_text_size_small"/>
+    </LinearLayout>
 
-    </RadioGroup>
 
 
     <Button
         android:id="@+id/nextQuestion"
-        android:textSize="@dimen/button_text_size"
         android:layout_width="@dimen/button_next_width"
+        android:textSize="@dimen/button_text_size"
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:backgroundTint="#8893a3"

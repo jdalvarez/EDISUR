@@ -47,11 +47,13 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:text="@string/pregunta1"
-        android:textSize="20sp"
+        android:textSize="@dimen/question_title_size_huge"
         android:textColor="@color/white"/>
     <RadioGroup
+        android:layout_marginTop="@dimen/answers_margin_top"
         android:id="@+id/Qgroup"
         app:layout_constraintTop_toBottomOf="@id/pregunta"
         app:layout_constraintStart_toStartOf="@id/pregunta"
@@ -59,21 +61,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <RadioButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/si_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/checkbox_text_size_huge"
             android:text="Si"
             android:textColor="@color/white"
             android:textStyle="bold"/>
         <RadioButton
+            android:id="@+id/no_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/checkbox_text_size_huge"
             android:text="No"
             android:textColor="@color/white"
             android:textStyle="bold"/>
     </RadioGroup>
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/nextQuestion"
+        android:textSize="@dimen/button_text_size"
+        android:layout_width="@dimen/button_next_width"
         android:layout_height="wrap_content"
         android:text="Siguiente"
         android:backgroundTint="#8893a3"

@@ -5,26 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioButton
-import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
-import com.google.firebase.firestore.FirebaseFirestore
 import com.jdalvarez.encuesta.QuestionVM
-import com.jdalvarez.encuesta.R
-import com.jdalvarez.encuesta.databinding.FragmentQuestion1Binding
+import com.jdalvarez.encuesta.databinding.FragmentQuestion6Binding
 
-class Question1Fragment : Fragment() {
-    private lateinit var binding: FragmentQuestion1Binding
+class Question6Fragment : Fragment() {
+    private lateinit var binding: FragmentQuestion6Binding
     private val vm by activityViewModels<QuestionVM>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentQuestion1Binding.inflate(inflater, container, false)
+        binding = FragmentQuestion6Binding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -34,19 +29,19 @@ class Question1Fragment : Fragment() {
     }
 
     private fun setUpUi() {
-        binding.nextQuestion.setOnClickListener {
-            vm.p1 = binding.pregunta.text.toString()
+        binding.finalizar.setOnClickListener {
+            vm.p6 = binding.pregunta.text.toString()
             if (binding.siAnswer.isChecked) {
-                vm.r1 = binding.siAnswer.text.toString()
-                findNavController().navigate(Question1FragmentDirections.actionQuestion1FragmentToQuestion2Fragment())
+                vm.r6 = binding.siAnswer.text.toString()
+                vm.save()
+                findNavController().navigate(Question6FragmentDirections.actionQuestion6FragmentToThanksFragment())
             } else if (binding.noAnswer.isChecked) {
-                vm.r1 = binding.noAnswer.text.toString()
-                findNavController().navigate(Question1FragmentDirections.actionQuestion1FragmentToQuestion2Fragment())
+                vm.r6 = binding.noAnswer.text.toString()
+                vm.save()
+                findNavController().navigate(Question6FragmentDirections.actionQuestion6FragmentToThanksFragment())
             } else {
                 Toast.makeText(context, "Por favor elija una opcion", Toast.LENGTH_LONG).show()
             }
         }
     }
-
-
 }

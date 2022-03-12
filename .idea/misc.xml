@@ -3,17 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/drawable/rectangle.xml" value="0.3395" />
         <entry key="app/src/main/res/drawable/rectangle_blue.xml" value="0.3395" />
         <entry key="app/src/main/res/drawable/rectangle_gray.xml" value="0.3395" />
         <entry key="app/src/main/res/drawable/rectangle_green.xml" value="0.3395" />
         <entry key="app/src/main/res/drawable/rectangle_white.xml" value="0.3395" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.296195652173913" />
+        <entry key="app/src/main/res/layout/fragment_form.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/fragment_hello_screen.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_question.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/fragment_question1.xml" value="0.3375" />
-        <entry key="app/src/main/res/layout/fragment_question2.xml" value="0.3375" />
+        <entry key="app/src/main/res/layout/fragment_question2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_question3.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/fragment_question4.xml" value="0.3375" />
+        <entry key="app/src/main/res/layout/fragment_question5.xml" value="0.3375" />
+        <entry key="app/src/main/res/layout/fragment_question6.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_thanks.xml" value="0.3375" />
       </map>

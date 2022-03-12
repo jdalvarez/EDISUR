@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Thanks"
+    tools:context=".ui.ThanksFragment"
     android:background="@color/white">
 
     <ImageView
@@ -51,8 +51,22 @@
         android:layout_height="wrap_content"
         android:text="¡MUCHAS GRACIAS!"
         android:textSize="50sp"
-        android:textColor="@drawable/rectangle_white"/>
+        android:textColor="#0c1f42"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/finalizar"
+        android:textSize="@dimen/button_text_size"
+        android:layout_width="@dimen/button_next_width"
+        android:layout_height="wrap_content"
+        android:text="ReIniciar"
+        android:backgroundTint="#8893a3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iniciar"
+        app:layout_constraintBottom_toTopOf="@id/logo"/>
     <ImageView
+        android:id="@+id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iniciar"
